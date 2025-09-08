@@ -1,20 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        h1 { color: #333; }
-        p { color: #555; }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lorenzo Bazzana — AI & Cybersecurity</title>
+<meta name="description" content="Lorenzo Bazzana — AI & Cybersecurity. Research fellow at AILab UniUd. Publications, projects, skills, and contact." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0e0f13;
+    --card:#151823;
+    --ink:#e7eaf0;
+    --muted:#a7afc0;
+    --accent:#8ad6ff;
+    --chip:#1f2433;
+    --link:#ea904f;
+    --section_heading:#e5a853;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:32px 20px}
+  header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:24px}
+  .title{display:flex;flex-direction:column;gap:6px}
+  h1{font-size:clamp(28px,4vw,40px);margin:0;letter-spacing:.4px}
+  .tagline{color:var(--muted);font-weight:400;margin:0}
+  .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  .cta a{padding:8px 12px;border-radius:12px;background:var(--chip);color:var(--ink);font-weight:600}
+  .cta a.primary{background:var(--link);color:#0a0f0d}
+  .grid{display:grid;grid-template-columns:1fr;gap:16px}
+  @media(min-width:860px){.grid{grid-template-columns:1.2fr .8fr}}
+  section{background:var(--card);border:1px solid #20283b;padding:20px 18px;border-radius:18px}
+  section h2{margin:0 0 10px 0;font-size:20px}
+  .item{margin:12px 0 14px 0}
+  .role{display:flex;justify-content:space-between;gap:10px}
+  .role strong{font-weight:700}
+  .muted{color:var(--muted)}
+  ul{margin:8px 0 0 18px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .chip{background:var(--chip);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--ink);border:1px solid #2a3347}
+  footer{margin:26px 0 6px;color:var(--muted);text-align:center}
+</style>
 </head>
 <body>
-    <h1>Welcome to Lorenzo Bazzana's homepage</h1>
-    <p>MSc student in AI and Cybersecurity at University of Udine</p>
-    Personal links: <a href="https://orcid.org/0009-0001-9727-7019">ORCID</a>
-    <a href="https://www.linkedin.com/in/lorenzo-bazzana-164359228">LinkedIn</a>
-    <p>Work in progress...</p>
+  <div class="wrap">
+    <header>
+      <div class="title">
+        <h1>Hi, I’m <span style="color:var(--link)">Lorenzo Bazzana</span> 👋</h1>
+        <p class="tagline">AI &amp; Cybersecurity — research fellow @ AILab UniUd</p>
+        <div class="cta">
+          <a class="primary" href="mailto:lorenzo.bazzana@gmail.com">Email me</a>
+          <a href="https://scholar.google.com/citations?user=lTipCM8AAAAJ&hl=it">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/lorenzo-bazzana-164359228/">LinkedIn</a>
+          <a href="https://github.com/LorenzoBazzana">GitHub</a>
+          <a href="https://orcid.org/0009-0001-9727-7019">ORCID</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section>
+        <h2 style="color:var(--section_heading)">What I've worked on</h2>
+        <div class="item">
+          <div class="role">
+            <strong>AI Research Fellow — AILab UniUd</strong>
+            <span class="muted">Jul 2024 – Present • Udine</span>
+          </div>
+          <ul>
+            <li>Built a 10k virtual museum dataset and boosted SoTA retrieval models <strong>+40% R@1</strong> with hierarchical room‑aware learning. <a href="https://dl.acm.org/doi/abs/10.1145/3731715.3733358">Read the paper!</a></li>
+            <li>Prototyped 3D vehicle detection from roadside cameras; engineered an image annotation tool to accelerate high‑quality dataset creation.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">NumPy</span><span class="chip">Pandas</span>
+            <span class="chip">Matplotlib</span><span class="chip">Weights &amp; Biases</span><span class="chip">PyTorch Geometric</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="role">
+            <strong>Cybersecurity Analyst Intern — Danieli Automation</strong>
+            <span class="muted">Jul 2022 – Sep 2022 • Buttrio (UD)</span>
+          </div>
+          <ul>
+            <li>Ran a cybersecurity gap analysis on industrial networks and devices and delivered a remediation plan as part of a thesis‑driven internship.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">nmap</span><span class="chip">Nessus</span><span class="chip">tcpdump</span><span class="chip">Wireshark</span><span class="chip">firmware-mod-kit</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 style="color:var(--section_heading)">Publications &amp; Highlights</h2>
+        <div class="item">
+          <div class="role">
+            <strong>HM3: Hierarchical Modeling of Multimedia Metaverses</strong>
+            <span class="muted">ICMR 2025</span>
+          </div>
+          <p class="muted">Macrì, Bazzana, et al. Theme‑aware contrastive learning across 10,000 virtual museums.</p>
+          <p><a href="https://dl.acm.org/doi/abs/10.1145/3731715.3733358">Paper</a></p>
+        </div>
+
+        <div class="item">
+          <div class="role">
+            <strong>ICMR ’25 Presenter</strong>
+            <span class="muted">Chicago, USA</span>
+          </div>
+          <p class="muted">Presenter for AILab Udine’s Reproducibility Track paper “AdOCTeRA – Adaptive Optimization Constraints for Improved text‑guided Retrieval of Apartments.”</p>
+        </div>
+
+        <div class="item">
+          <div class="role">
+            <strong>CVE-2022-3203 — MITRE</strong>
+            <span class="muted">CVSS v3.1: 9.8 (Critical)</span>
+          </div>
+          <p><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3203">CVE entry</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div class="grid" style="margin-top:16px">
+      <section>
+        <h2 style="color:var(--section_heading)">Education</h2>
+        <div class="item">
+          <div class="role">
+            <strong>MSc in Artificial Intelligence &amp; Cybersecurity</strong>
+            <span class="muted">2022 – 2025 • 110/110 cum laude</span>
+          </div>
+          <p class="muted">Joint degree • University of Udine &amp; AAU Klagenfurt (Austria)</p>
+          <ul>
+            <li><em>Thesis:</em> Enhancing Metaverse Retrieval Effectiveness through Hierarchical Room‑Aware Representations.</li>
+            <li>Scholarship: “Scuola Superiore Universitaria di Toppo Wassermann” (3 admits/year).</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="role">
+            <strong>BSc in Computer Science</strong>
+            <span class="muted">2019 – 2022 • 110/110 cum laude</span>
+          </div>
+          <p class="muted">University of Udine • Top‑5 of the class.</p>
+          <ul>
+            <li><em>Thesis:</em> Gap analysis of an industrial measurement system &amp; remediation plan for its security implementation.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 style="color:var(--section_heading)">Skills</h2>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">PyTorch Geometric</span>
+          <span class="chip">C</span><span class="chip">C++</span><span class="chip">JavaScript</span><span class="chip">Haskell</span>
+          <span class="chip">Java</span><span class="chip">Matlab</span><span class="chip">Bash</span><span class="chip">Git</span>
+          <span class="chip">Unity</span><span class="chip">PHP</span><span class="chip">Linux</span><span class="chip">macOS</span>
+          <span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span><span class="chip">W&amp;B</span>
+        </div>
+        <h2 style="margin-top:18px">Languages</h2>
+        <ul>
+          <li>Italian — native</li>
+          <li>English — C1 (Cambridge CAE)</li>
+          <li>French — basic</li>
+        </ul>
+      </section>
+    </div>
+
+    <section style="margin-top:16px">
+      <h2>A bit about me</h2>
+      <p>
+        I’m endlessly curious about math, computers, and music (but not in this order). 
+        When something sparks my interest, I’ll keep bashing my head on it until I figure everything out, 
+        even if it feels like it could take more than one lifetime. 
+        Next thing to figure out: how to actually get those extra lives.
+</p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Lorenzo Bazzana • Last updated 09/2025
+    </footer>
+  </div>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
